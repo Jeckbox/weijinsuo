@@ -69,6 +69,7 @@ $(function(){
 		startX = e.originalEvent.touches[0].clientX;
 	});
 	$carousels.on('touchmove',function(e){
+		e.preventDefault();
 		endX = e.originalEvent.touches[0].clientX;
 	});
 	$carousels.on('touchend',function(e){
